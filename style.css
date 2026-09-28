@@ -1,0 +1,935 @@
+/* ===============================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===============================
+   BODY
+================================ */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f3eb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ===============================
+   CONTAINER
+================================ */
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ===============================
+   NAVBAR
+================================ */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: #21160f;
+}
+
+
+.navbar {
+    width: 90%;
+    max-width: 1300px;
+
+    height: 70px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    color: #d4af37;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+
+.nav-menu a {
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.nav-menu a:hover {
+    color: #d4af37;
+}
+
+
+/* MENU MOBILE */
+
+.menu-toggle {
+    display: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* ===============================
+   HERO
+================================ */
+
+.hero {
+
+    height: 100vh;
+
+    min-height: 650px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* OVERLAY GELAP */
+
+.hero-overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(30, 18, 10, 0.9),
+            rgba(30, 18, 10, 0.4),
+            rgba(30, 18, 10, 0.2)
+        );
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 85%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    color: white;
+
+    padding-top: 60px;
+}
+
+
+.hero-subtitle {
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+
+    color: #e0c16d;
+}
+
+
+.hero h1 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 65px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-text {
+
+    width: 500px;
+
+    max-width: 100%;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+
+    color: #eee;
+}
+
+
+/* BUTTON */
+
+.btn {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #c89b3c;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+
+    background-color: #a9791f;
+
+    transform: translateY(-3px);
+}
+
+
+/* ===============================
+   SECTION UMUM
+================================ */
+
+section {
+
+    padding: 90px 0;
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: auto auto 50px;
+}
+
+
+.section-title h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 35px;
+
+    color: #4a2c1b;
+
+    margin-bottom: 15px;
+}
+
+
+.section-title p {
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+.ornamen {
+
+    font-size: 30px;
+
+    color: #b8862c;
+}
+
+
+/* ===============================
+   TENTANG
+================================ */
+
+.tentang {
+
+    background-color: #fffaf2;
+}
+
+
+.tentang-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+.tentang-text {
+
+    flex: 1;
+}
+
+
+.tentang-text h3 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    margin-bottom: 20px;
+
+    color: #4a2c1b;
+}
+
+
+.tentang-text p {
+
+    margin-bottom: 15px;
+
+    color: #666;
+}
+
+
+.tentang-icon {
+
+    font-size: 100px;
+
+    color: #c89b3c;
+}
+
+
+/* ===============================
+   BAJU ADAT
+================================ */
+
+.baju-adat {
+
+    background-color: #f3eadc;
+}
+
+
+.card-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.card {
+
+    display: flex;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.card img {
+
+    width: 45%;
+
+    height: 280px;
+
+    object-fit: cover;
+}
+
+
+.card-content {
+
+    padding: 25px;
+}
+
+
+.card-content h3 {
+
+    font-family: "Playfair Display", serif;
+
+    color: #4a2c1b;
+
+    margin-bottom: 15px;
+
+    font-size: 23px;
+}
+
+
+.card-content p {
+
+    font-size: 14px;
+
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+.card-btn {
+
+    background-color: #c89b3c;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 8px 15px;
+
+    border-radius: 4px;
+
+    font-size: 13px;
+
+    display: inline-block;
+
+    transition: 0.3s;
+}
+
+
+.card-btn:hover {
+
+    background-color: #8b5e1e;
+}
+
+
+/* ===============================
+   GALERI
+================================ */
+
+.galeri {
+
+    background-color: #fffaf2;
+}
+
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.gallery-item {
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    height: 200px;
+}
+
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.1);
+}
+
+
+/* BUTTON GALERI */
+
+.gallery-button {
+
+    text-align: center;
+
+    margin-top: 30px;
+}
+
+
+.gallery-button button {
+
+    background-color: #c89b3c;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+
+    transition: 0.3s;
+}
+
+
+.gallery-button button:hover {
+
+    background-color: #8b5e1e;
+}
+
+
+/* ===============================
+   BUDAYA
+================================ */
+
+.budaya {
+
+    background-color: #f3eadc;
+}
+
+
+.budaya-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.budaya-card {
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+.budaya-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,0.1);
+}
+
+
+.budaya-icon {
+
+    font-size: 45px;
+
+    color: #b8862c;
+
+    margin-bottom: 15px;
+}
+
+
+.budaya-card h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    color: #4a2c1b;
+
+    margin-bottom: 10px;
+}
+
+
+.budaya-card p {
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+
+/* ===============================
+   KONTAK
+================================ */
+
+.kontak {
+
+    background-color: #21160f;
+
+    color: white;
+}
+
+
+.kontak-container {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+}
+
+
+.kontak-info h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+
+    color: #e0c16d;
+}
+
+
+.kontak-info p {
+
+    color: #ccc;
+
+    margin-bottom: 25px;
+}
+
+
+.info-item {
+
+    margin-bottom: 15px;
+
+    color: #ddd;
+}
+
+
+/* FORM */
+
+.contact-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+
+    padding: 13px;
+
+    border-radius: 5px;
+
+    border: 1px solid #755c46;
+
+    background-color: #2e2118;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    outline: none;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    border-color: #d4af37;
+}
+
+
+.contact-form button {
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #c89b3c;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.contact-form button:hover {
+
+    background-color: #a9791f;
+}
+
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+
+    background-color: #160e09;
+
+    color: #aaa;
+
+    padding: 20px 0;
+}
+
+
+.footer-content {
+
+    width: 85%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 13px;
+}
+
+
+.social-media {
+
+    display: flex;
+
+    gap: 12px;
+}
+
+
+.social-media span {
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #3a291d;
+
+    color: #d4af37;
+}
+
+
+/* ===============================
+   RESPONSIVE TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .card-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .budaya-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ===============================
+   RESPONSIVE MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        width: 100%;
+
+        background-color: #21160f;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px;
+
+        gap: 20px;
+    }
+
+
+    .nav-menu.active {
+
+        display: flex;
+    }
+
+
+    .menu-toggle {
+
+        display: block;
+    }
+
+
+    .hero h1 {
+
+        font-size: 45px;
+    }
+
+
+    .tentang-content {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .card {
+
+        flex-direction: column;
+    }
+
+
+    .card img {
+
+        width: 100%;
+    }
+
+
+    .kontak-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-content {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+
+        font-size: 38px;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 28px;
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .budaya-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .container {
+
+        width: 90%;
+    }
+
+}
